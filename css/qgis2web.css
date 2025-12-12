@@ -197,59 +197,7 @@
         .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
             display: none;
         }
-        .css_WlaharKulon_3 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
-        .css_Karangdadap_4 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
-        .css_Srowot_5 {
+        .css_Srowot_4 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -301,32 +249,6 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Pekaja_7 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
         .css_Petir_8 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
@@ -353,7 +275,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_KalisograWetan_9 {
+        .css_Pajerukan_10 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -379,7 +301,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Kalibagor_11 {
+        .css_WlaharKulon_24 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -405,7 +327,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_KalicupakLor_12 {
+        .css_Karangdadap_25 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -431,7 +353,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Kaliori_13 {
+        .css_Pekaja_26 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -457,7 +379,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_KalicupakKidul_14 {
+        .css_Kalibagor_27 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -483,7 +405,111 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_KantorBalaiDesa_17 {
+        .css_Kaliori_28 {
+            text-shadow: -2px -2px 0 #fafafa,
+                -2px -1px 0 #fafafa,
+                -2px 0px 0 #fafafa,
+                -2px 1px 0 #fafafa,
+                -2px 2px 0 #fafafa,
+                -1px -2px 0 #fafafa,
+                -1px -1px 0 #fafafa,
+                -1px 0px 0 #fafafa,
+                -1px 1px 0 #fafafa,
+                -1px 2px 0 #fafafa,
+                0px -2px 0 #fafafa,
+                0px -1px 0 #fafafa,
+                0px 1px 0 #fafafa,
+                0px 2px 0 #fafafa,
+                1px -2px 0 #fafafa,
+                1px -1px 0 #fafafa,
+                1px 0px 0 #fafafa,
+                1px 1px 0 #fafafa,
+                1px 2px 0 #fafafa,
+                2px -2px 0 #fafafa,
+                2px -1px 0 #fafafa,
+                2px 0px 0 #fafafa,
+                2px 1px 0 #fafafa,
+                2px 2px 0 #fafafa;
+        }
+        .css_KalisograWetan_29 {
+            text-shadow: -2px -2px 0 #fafafa,
+                -2px -1px 0 #fafafa,
+                -2px 0px 0 #fafafa,
+                -2px 1px 0 #fafafa,
+                -2px 2px 0 #fafafa,
+                -1px -2px 0 #fafafa,
+                -1px -1px 0 #fafafa,
+                -1px 0px 0 #fafafa,
+                -1px 1px 0 #fafafa,
+                -1px 2px 0 #fafafa,
+                0px -2px 0 #fafafa,
+                0px -1px 0 #fafafa,
+                0px 1px 0 #fafafa,
+                0px 2px 0 #fafafa,
+                1px -2px 0 #fafafa,
+                1px -1px 0 #fafafa,
+                1px 0px 0 #fafafa,
+                1px 1px 0 #fafafa,
+                1px 2px 0 #fafafa,
+                2px -2px 0 #fafafa,
+                2px -1px 0 #fafafa,
+                2px 0px 0 #fafafa,
+                2px 1px 0 #fafafa,
+                2px 2px 0 #fafafa;
+        }
+        .css_KalicupakLor_31 {
+            text-shadow: -2px -2px 0 #fafafa,
+                -2px -1px 0 #fafafa,
+                -2px 0px 0 #fafafa,
+                -2px 1px 0 #fafafa,
+                -2px 2px 0 #fafafa,
+                -1px -2px 0 #fafafa,
+                -1px -1px 0 #fafafa,
+                -1px 0px 0 #fafafa,
+                -1px 1px 0 #fafafa,
+                -1px 2px 0 #fafafa,
+                0px -2px 0 #fafafa,
+                0px -1px 0 #fafafa,
+                0px 1px 0 #fafafa,
+                0px 2px 0 #fafafa,
+                1px -2px 0 #fafafa,
+                1px -1px 0 #fafafa,
+                1px 0px 0 #fafafa,
+                1px 1px 0 #fafafa,
+                1px 2px 0 #fafafa,
+                2px -2px 0 #fafafa,
+                2px -1px 0 #fafafa,
+                2px 0px 0 #fafafa,
+                2px 1px 0 #fafafa,
+                2px 2px 0 #fafafa;
+        }
+        .css_KalicupakKidul_33 {
+            text-shadow: -2px -2px 0 #fafafa,
+                -2px -1px 0 #fafafa,
+                -2px 0px 0 #fafafa,
+                -2px 1px 0 #fafafa,
+                -2px 2px 0 #fafafa,
+                -1px -2px 0 #fafafa,
+                -1px -1px 0 #fafafa,
+                -1px 0px 0 #fafafa,
+                -1px 1px 0 #fafafa,
+                -1px 2px 0 #fafafa,
+                0px -2px 0 #fafafa,
+                0px -1px 0 #fafafa,
+                0px 1px 0 #fafafa,
+                0px 2px 0 #fafafa,
+                1px -2px 0 #fafafa,
+                1px -1px 0 #fafafa,
+                1px 0px 0 #fafafa,
+                1px 1px 0 #fafafa,
+                1px 2px 0 #fafafa,
+                2px -2px 0 #fafafa,
+                2px -1px 0 #fafafa,
+                2px 0px 0 #fafafa,
+                2px 1px 0 #fafafa,
+                2px 2px 0 #fafafa;
+        }
+        .css_KantorBalaiDesa_37 {
             text-shadow: -2px -2px 0 #fffeff,
                 -2px -1px 0 #fffeff,
                 -2px 0px 0 #fffeff,
@@ -509,7 +535,7 @@
                 2px 1px 0 #fffeff,
                 2px 2px 0 #fffeff;
         }
-        .css_Jalan_Desa_18 {
+        .css_Jalan_Desa_38 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -535,7 +561,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Jalan_Kabupaten_19 {
+        .css_Jalan_Kabupaten_39 {
             text-shadow: -6px -6px 0 #fafafa,
                 -6px -5px 0 #fafafa,
                 -6px -4px 0 #fafafa,
@@ -704,4 +730,14 @@
                 6px 4px 0 #fafafa,
                 6px 5px 0 #fafafa,
                 6px 6px 0 #fafafa;
+        }
+        .css_Pendidikan_40 {
+            text-shadow: -1px -1px 0 #fafafa,
+                -1px 0px 0 #fafafa,
+                -1px 1px 0 #fafafa,
+                0px -1px 0 #fafafa,
+                0px 1px 0 #fafafa,
+                1px -1px 0 #fafafa,
+                1px 0px 0 #fafafa,
+                1px 1px 0 #fafafa;
         }
