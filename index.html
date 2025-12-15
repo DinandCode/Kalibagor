@@ -80,10 +80,10 @@
   </style>
 </head>
 
-<body class="bg-cardbg font-sans text-white">
+<body class="bg-primary font-sans text-white">
 
 <div class="sticky-header-container max-w-7xl mx-auto">
-  <header class="bg-primary text-white shadow-xl transition duration-300 rounded-xl border border-accent/20">
+  <header class="bg-primary text-white shadow-xl transition duration-300 rounded-xl border border-accent/40">
     <div class="px-6 py-4 flex justify-between items-center">
       <div class="flex items-center gap-3">
         <img 
@@ -116,24 +116,45 @@
   </header>
 </div>
 
-
-<section class="bg-cardbg border-b-4 border-white shadow-inner">
-  <div class="max-w-7xl mx-auto px-6 py-16">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight animate-slide-in">
+<section
+  class="border-b-4 border-white shadow-inner
+         bg-no-repeat bg-right
+         bg-cover md:bg-contain "
+  style="
+    background-image:
+      linear-gradient(
+        to right,
+         rgba(30,58,138,0.98) 38%,
+        rgba(30,58,138,0.90) 48%,
+        rgba(30,58,138,0.75) 58%,
+        rgba(30,58,138,0.55) 68%,
+        rgba(30,58,138,0.30) 80%,
+        rgba(30,58,138,0.10) 92%,
+        rgba(30,58,138,0.00) 100%
+      ),
+      url('/images/Pg-kalibagor.jpg');
+  "
+>
+  <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
       Sistem Informasi Geografis
-      <span class="block text-white mt-2">Kecamatan Kalibagor</span>
+      <span class="block mt-2">Kecamatan Kalibagor</span>
     </h2>
-    
-    <p class="mt-4 text-white/90 max-w-4xl text-lg" data-aos="fade-up" data-aos-delay="200">
+
+    <p class="mt-4 text-white/90 max-w-4xl text-lg">
       Peta interaktif wilayah kecamatan yang menampilkan data spasial
       desa, jalan, dan fasilitas umum berbasis QGIS dan Leaflet.
     </p>
 
-    <a href="#peta" class="mt-8 inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-xl hover:bg-white hover:text-primary transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
-        <i class="fas fa-map-marked-alt mr-2"></i> Jelajahi Peta
+    <a
+      href="#peta"
+      class="mt-8 inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-xl hover:scale-105 transition"
+    >
+      <i class="fas fa-map-marked-alt mr-2"></i> Jelajahi Peta
     </a>
   </div>
 </section>
+
 
 <main class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
@@ -244,28 +265,27 @@
 </main>
 
 <section id="mahasiswa" class="max-w-7xl mx-auto px-6 pb-12">
-  <div class="bg-white rounded-xl shadow-2xl p-6 border border-white" data-aos="fade-up" data-aos-duration="1000">
-
-    <h3 class="text-2xl font-bold text-blue-800 mb-5 flex items-center gap-2 border-b border-blue-800/10 pb-2">
-      <i class="fas fa-user-graduate text-blue-800"></i> Identitas Mahasiswa
+  <div class="bg-cardbg rounded-xl shadow-2xl p-6 border border-white" data-aos="fade-up" data-aos-duration="1000">
+    <h3 class="text-2xl font-bold text-white mb-5 flex items-center gap-2 border-b border-white/10 pb-2">
+      <i class="fas fa-user-graduate text-white"></i> Identitas Mahasiswa
     </h3>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-base">
-      <div class="border-l-4 border-blue-800 pl-4">
-        <p class="text-blue-800/70 text-sm">Nama</p>
-        <p class="font-semibold text-blue-800">Dominic Dinand Aristo</p>
+      <div class="border-l-4 border-white pl-4">
+        <p class="text-white/70 text-sm">Nama</p>
+        <p class="font-semibold text-white">Dominic Dinand Aristo</p>
       </div>
-      <div class="border-l-4 border-blue-800 pl-4">
-        <p class="text-blue-800/70 text-sm">NIM</p>
-        <p class="font-semibold text-blue-800">23SA21A031</p>
+      <div class="border-l-4 border-white pl-4">
+        <p class="text-white/70 text-sm">NIM</p>
+        <p class="font-semibold text-white">23SA21A031</p>
       </div>
-      <div class="border-l-4 border-blue-800 pl-4">
-        <p class="text-blue-800/70 text-sm">Kelas</p>
-        <p class="font-semibold text-blue-800">SI23B</p>
+      <div class="border-l-4 border-white pl-4">
+        <p class="text-white/70 text-sm">Kelas</p>
+        <p class="font-semibold text-white">SI23B</p>
       </div>
-      <div class="border-l-4 border-blue-800 pl-4">
-        <p class="text-blue-800/70 text-sm">Mata Kuliah</p>
-        <p class="font-semibold text-blue-800">Sistem Informasi Geografis</p>
+      <div class="border-l-4 border-white pl-4">
+        <p class="text-white/70 text-sm">Mata Kuliah</p>
+        <p class="font-semibold text-white">Sistem Informasi Geografis</p>
       </div>
     </div>
   </div>
