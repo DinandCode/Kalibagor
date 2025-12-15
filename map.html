@@ -6,6 +6,8 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
+        
+  <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
         <link rel="stylesheet" href="css/qgis2web.css">
@@ -19,6 +21,97 @@
             padding: 0;
             margin: 0;
         }
+/* --- BAGIAN CSS KUSTOM: DESAIN NAVY MODERN --- */
+
+/* WARNA PALET:
+   Primary/Navy: #001f3f
+   Accent/Aqua: #7FDBFF
+   White: #ffffff
+*/
+
+/* 1. PENYESUAIAN POSISI DAN JARAK (tetap sama) */
+
+.leaflet-control-container .leaflet-top.leaflet-right .leaflet-control {
+    /* Atur semua kontrol (termasuk Layers dan Search) agar memiliki jarak dari tepi */
+    margin-right: 10px; 
+    margin-top: 10px;
+}
+
+/* 2. STYLING TOMBOL IKON PENCARIAN (Default Hidden State) */
+
+.leaflet-control-search .search-button {
+    background-color: #001f3f; /* Latar belakang Navy */
+    color: #ffffff; /* Warna ikon Putih */
+    border-radius: 50%; /* Membuat tombol bulat */
+    width: 40px; /* Sedikit lebih besar */
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); /* Bayangan lebih gelap agar menonjol */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transisi lebih mulus */
+}
+
+.leaflet-control-search .search-button:hover {
+    background-color: #003366; /* Navy sedikit lebih terang saat di-hover */
+    color: #7FDBFF; /* Warna Aqua sebagai highlight */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5); 
+}
+
+/* 3. STYLING KOTAK INPUT (Expanded State) */
+
+.leaflet-control-search .search-input {
+    /* Input field */
+    border: 1px solid #001f3f; /* Garis tepi Navy */
+    border-radius: 6px; /* Sudut lebih lembut */
+    padding: 8px 15px; /* Padding lebih besar */
+    width: 220px; /* Lebar yang ideal */
+    font-size: 15px;
+    color: #333;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+    transition: all 0.3s ease;
+}
+
+/* Hapus fokus default browser dan berikan highlight Aqua */
+.leaflet-control-search .search-input:focus {
+    outline: none;
+    border: 2px solid #7FDBFF; /* Garis tepi Aqua saat fokus */
+    box-shadow: 0 0 10px rgba(127, 219, 255, 0.7); /* Glow effect Aqua */
+}
+
+/* 4. STYLING DAFTAR HASIL (Tooltip) */
+
+.leaflet-control-search .search-tooltip {
+    /* Kontainer utama hasil pencarian */
+    background: #ffffff;
+    border: 1px solid #001f3f; /* Border Navy */
+    border-top: none; 
+    border-radius: 0 0 6px 6px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+.leaflet-control-search .search-tip {
+    /* Setiap item hasil */
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0; /* Garis pemisah halus */
+    color: #333;
+}
+
+.leaflet-control-search .search-tip:last-child {
+    border-bottom: none;
+}
+
+.leaflet-control-search .search-tip-select {
+    /* Saat hasil dipilih/di-hover */
+    background-color: #e0f7fa; /* Latar belakang Aqua sangat muda */
+    color: #001f3f; /* Teks Navy */
+    font-weight: 600; /* Sedikit lebih tebal */
+    transition: background-color 0.2s;
+}
         </style>
         <title></title>
     </head>
@@ -3935,26 +4028,39 @@
                         });
                     }
                 }
-        map.addControl(new L.Control.Search({
-            layer: layer_KantorBalaiDesa_34,
-            initial: false,
-            hideMarkerOnCollapse: true,
-            propertyName: 'Nama'}));
-        if (typeof url === 'undefined') {
-            document.getElementsByClassName('search-button')[0].className += ' fa fa-binoculars';
-        } else {
-            document.getElementsByClassName('search-button')[1].className += ' fa fa-binoculars';
-        }
-        resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
-        map.on("zoomend", function(){
-            resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
-        });
-        map.on("layeradd", function(){
-            resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
-        });
-        map.on("layerremove", function(){
-            resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
-        });
+       // 1. Buat Feature Group baru untuk menggabungkan layer yang ingin dicari
+var combinedSearchLayer = L.featureGroup([
+    layer_KantorBalaiDesa_34, // Layer Kantor Balai Desa
+    layer_Pendidikan_33,
+    layer_Tempat_Ibadah_31      // Layer Pendidikan
+]);
+
+// 2. Tambahkan L.Control.Search menggunakan Feature Group gabungan
+map.addControl(new L.Control.Search({
+    layer: combinedSearchLayer, // Gunakan Feature Group gabungan
+    initial: false,
+    hideMarkerOnCollapse: true,
+    propertyName: 'Nama' // Asumsi nama tempat/lokasi pendidikan juga ada di kolom 'Nama'
+}));
+
+// Sisa kode Anda
+if (typeof url === 'undefined') {
+    document.getElementsByClassName('search-button')[0].className += ' fa fa-binoculars';
+} else {
+    document.getElementsByClassName('search-button')[1].className += ' fa fa-binoculars';
+}
+
+resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
+
+map.on("zoomend", function(){
+    resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
+});
+map.on("layeradd", function(){
+    resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
+});
+map.on("layerremove", function(){
+    resetLabels([layer_Srowot_2,layer_Suro_4,layer_Pekaja_6,layer_Petir_8,layer_Pajerukan_10,layer_Batas_RW_Pajerukan_11,layer_Kalibagor_12,layer_WlaharKulon_14,layer_Karangdadap_16,layer_Kaliori_18,layer_KalisograWetan_20,layer_KalicupakLor_22,layer_KalicupakKidul_24,layer_sungai_26,layer_Jalan_RT_28,layer_Jalan_Desa_29,layer_Jalan_Kabupaten_30,layer_Tempat_Ibadah_31,layer_Kesehatan_32,layer_Pendidikan_33,layer_KantorBalaiDesa_34,layer_RumahSaya_35]);
+});
         </script>        
     </body>
 </html>
