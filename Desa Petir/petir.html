@@ -975,8 +975,14 @@
               addLabel(layer, i);
               i++;
         });
+            var combinedSearchLayer = L.featureGroup([
+    layer_Balai_Desa_8, // Layer Kantor Balai Desa
+    layer_Pendidikan_6,
+    layer_Masjid_7,
+    layer_Pasar_9      // Layer Pendidikan
+]);
         map.addControl(new L.Control.Search({
-            layer: layer_Masjid_7,
+            layer: combinedSearchLayer,
             initial: false,
             hideMarkerOnCollapse: true,
             propertyName: 'Nama'}));

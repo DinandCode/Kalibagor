@@ -1258,8 +1258,14 @@
                         });
                     }
                 }
+                var combinedSearchLayer = L.featureGroup([
+    layer_InstansiPemerintah_9, // Layer Kantor Balai Desa
+    layer_Pendidikan_10,
+    layer_TempatIbadah_7,
+    layer_Kesehatan_8      // Layer Pendidikan
+]);
         map.addControl(new L.Control.Search({
-            layer: layer_Pendidikan_10,
+            layer: combinedSearchLayer,
             initial: false,
             hideMarkerOnCollapse: true,
             propertyName: 'Nama'}));
