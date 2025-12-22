@@ -194,9 +194,6 @@
             justify-content: center;
             align-items: center;
         }
-        .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
-            display: none;
-        }
         .css_Srowot_2 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
@@ -223,7 +220,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Suro_4 {
+        .css_Suro_3 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -249,7 +246,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Pekaja_6 {
+        .css_Pekaja_4 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -275,7 +272,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Petir_8 {
+        .css_Petir_5 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -301,7 +298,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Pajerukan_10 {
+        .css_Pajerukan_6 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -327,7 +324,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Kalibagor_12 {
+        .css_Kalibagor_7 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -353,7 +350,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_WlaharKulon_14 {
+        .css_Wlahar_Wetan_8 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -379,7 +376,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Karangdadap_16 {
+        .css_Karangdadap_9 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -405,7 +402,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Kaliori_18 {
+        .css_Kaliori_10 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -431,7 +428,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_KalisograWetan_20 {
+        .css_KalisograWetan_11 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -457,255 +454,7 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_KalicupakLor_22 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
-        .css_KalicupakKidul_24 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
-        .css_Jalan_Desa_29 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
-        .css_Jalan_Kabupaten_30 {
-            text-shadow: -6px -6px 0 #fafafa,
-                -6px -5px 0 #fafafa,
-                -6px -4px 0 #fafafa,
-                -6px -3px 0 #fafafa,
-                -6px -2px 0 #fafafa,
-                -6px -1px 0 #fafafa,
-                -6px 0px 0 #fafafa,
-                -6px 1px 0 #fafafa,
-                -6px 2px 0 #fafafa,
-                -6px 3px 0 #fafafa,
-                -6px 4px 0 #fafafa,
-                -6px 5px 0 #fafafa,
-                -6px 6px 0 #fafafa,
-                -5px -6px 0 #fafafa,
-                -5px -5px 0 #fafafa,
-                -5px -4px 0 #fafafa,
-                -5px -3px 0 #fafafa,
-                -5px -2px 0 #fafafa,
-                -5px -1px 0 #fafafa,
-                -5px 0px 0 #fafafa,
-                -5px 1px 0 #fafafa,
-                -5px 2px 0 #fafafa,
-                -5px 3px 0 #fafafa,
-                -5px 4px 0 #fafafa,
-                -5px 5px 0 #fafafa,
-                -5px 6px 0 #fafafa,
-                -4px -6px 0 #fafafa,
-                -4px -5px 0 #fafafa,
-                -4px -4px 0 #fafafa,
-                -4px -3px 0 #fafafa,
-                -4px -2px 0 #fafafa,
-                -4px -1px 0 #fafafa,
-                -4px 0px 0 #fafafa,
-                -4px 1px 0 #fafafa,
-                -4px 2px 0 #fafafa,
-                -4px 3px 0 #fafafa,
-                -4px 4px 0 #fafafa,
-                -4px 5px 0 #fafafa,
-                -4px 6px 0 #fafafa,
-                -3px -6px 0 #fafafa,
-                -3px -5px 0 #fafafa,
-                -3px -4px 0 #fafafa,
-                -3px -3px 0 #fafafa,
-                -3px -2px 0 #fafafa,
-                -3px -1px 0 #fafafa,
-                -3px 0px 0 #fafafa,
-                -3px 1px 0 #fafafa,
-                -3px 2px 0 #fafafa,
-                -3px 3px 0 #fafafa,
-                -3px 4px 0 #fafafa,
-                -3px 5px 0 #fafafa,
-                -3px 6px 0 #fafafa,
-                -2px -6px 0 #fafafa,
-                -2px -5px 0 #fafafa,
-                -2px -4px 0 #fafafa,
-                -2px -3px 0 #fafafa,
-                -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -2px 3px 0 #fafafa,
-                -2px 4px 0 #fafafa,
-                -2px 5px 0 #fafafa,
-                -2px 6px 0 #fafafa,
-                -1px -6px 0 #fafafa,
-                -1px -5px 0 #fafafa,
-                -1px -4px 0 #fafafa,
-                -1px -3px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                -1px 3px 0 #fafafa,
-                -1px 4px 0 #fafafa,
-                -1px 5px 0 #fafafa,
-                -1px 6px 0 #fafafa,
-                0px -6px 0 #fafafa,
-                0px -5px 0 #fafafa,
-                0px -4px 0 #fafafa,
-                0px -3px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                0px 3px 0 #fafafa,
-                0px 4px 0 #fafafa,
-                0px 5px 0 #fafafa,
-                0px 6px 0 #fafafa,
-                1px -6px 0 #fafafa,
-                1px -5px 0 #fafafa,
-                1px -4px 0 #fafafa,
-                1px -3px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                1px 3px 0 #fafafa,
-                1px 4px 0 #fafafa,
-                1px 5px 0 #fafafa,
-                1px 6px 0 #fafafa,
-                2px -6px 0 #fafafa,
-                2px -5px 0 #fafafa,
-                2px -4px 0 #fafafa,
-                2px -3px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa,
-                2px 3px 0 #fafafa,
-                2px 4px 0 #fafafa,
-                2px 5px 0 #fafafa,
-                2px 6px 0 #fafafa,
-                3px -6px 0 #fafafa,
-                3px -5px 0 #fafafa,
-                3px -4px 0 #fafafa,
-                3px -3px 0 #fafafa,
-                3px -2px 0 #fafafa,
-                3px -1px 0 #fafafa,
-                3px 0px 0 #fafafa,
-                3px 1px 0 #fafafa,
-                3px 2px 0 #fafafa,
-                3px 3px 0 #fafafa,
-                3px 4px 0 #fafafa,
-                3px 5px 0 #fafafa,
-                3px 6px 0 #fafafa,
-                4px -6px 0 #fafafa,
-                4px -5px 0 #fafafa,
-                4px -4px 0 #fafafa,
-                4px -3px 0 #fafafa,
-                4px -2px 0 #fafafa,
-                4px -1px 0 #fafafa,
-                4px 0px 0 #fafafa,
-                4px 1px 0 #fafafa,
-                4px 2px 0 #fafafa,
-                4px 3px 0 #fafafa,
-                4px 4px 0 #fafafa,
-                4px 5px 0 #fafafa,
-                4px 6px 0 #fafafa,
-                5px -6px 0 #fafafa,
-                5px -5px 0 #fafafa,
-                5px -4px 0 #fafafa,
-                5px -3px 0 #fafafa,
-                5px -2px 0 #fafafa,
-                5px -1px 0 #fafafa,
-                5px 0px 0 #fafafa,
-                5px 1px 0 #fafafa,
-                5px 2px 0 #fafafa,
-                5px 3px 0 #fafafa,
-                5px 4px 0 #fafafa,
-                5px 5px 0 #fafafa,
-                5px 6px 0 #fafafa,
-                6px -6px 0 #fafafa,
-                6px -5px 0 #fafafa,
-                6px -4px 0 #fafafa,
-                6px -3px 0 #fafafa,
-                6px -2px 0 #fafafa,
-                6px -1px 0 #fafafa,
-                6px 0px 0 #fafafa,
-                6px 1px 0 #fafafa,
-                6px 2px 0 #fafafa,
-                6px 3px 0 #fafafa,
-                6px 4px 0 #fafafa,
-                6px 5px 0 #fafafa,
-                6px 6px 0 #fafafa;
-        }
-        .css_Tempat_Ibadah_31 {
+        .css_Kesehatan_14 {
             text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
@@ -715,7 +464,7 @@
                 1px 0px 0 #fafafa,
                 1px 1px 0 #fafafa;
         }
-        .css_Kesehatan_32 {
+        .css_Tempat_Ibadah_15 {
             text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
@@ -725,7 +474,7 @@
                 1px 0px 0 #fafafa,
                 1px 1px 0 #fafafa;
         }
-        .css_Pendidikan_33 {
+        .css_Pendidikan_16 {
             text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
@@ -735,7 +484,7 @@
                 1px 0px 0 #fafafa,
                 1px 1px 0 #fafafa;
         }
-        .css_KantorBalaiDesa_34 {
+        .css_KantorBalaiDesa_17 {
             text-shadow: -2px -2px 0 #fffeff,
                 -2px -1px 0 #fffeff,
                 -2px 0px 0 #fffeff,
@@ -761,7 +510,7 @@
                 2px 1px 0 #fffeff,
                 2px 2px 0 #fffeff;
         }
-        .css_RumahSaya_35 {
+        .css_NamaKecamatan_18 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
