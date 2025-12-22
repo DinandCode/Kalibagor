@@ -1,0 +1,1 @@
+var json_Balai_Desa_8 = {"type":"FeatureCollection","name":"Balai_Desa_8","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Kantor Balai Desa Petir"},"geometry":{"type":"Point","coordinates":[109.313707475967149,-7.464613705394575]}}]}

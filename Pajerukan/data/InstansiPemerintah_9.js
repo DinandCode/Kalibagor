@@ -1,0 +1,1 @@
+var json_InstansiPemerintah_9 = {"type":"FeatureCollection","name":"InstansiPemerintah_9","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Kantor Balai Desa Pajerukan","Luas (M)":"80"},"geometry":{"type":"Point","coordinates":[109.308557200501085,-7.472628682992495]}}]}
