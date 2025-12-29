@@ -1,0 +1,1 @@
+var json_Point_Lapangan_9 = {"type":"FeatureCollection","name":"Point_Lapangan_9","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Lapangan Desa Kalicupak Lor"},"geometry":{"type":"Point","coordinates":[109.316219677969912,-7.458801797823752]}}]}

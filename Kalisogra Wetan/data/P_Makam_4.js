@@ -1,0 +1,1 @@
+var json_P_Makam_4 = {"type":"FeatureCollection","name":"P_Makam_4","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"TPU Kalisogra Wetan"},"geometry":{"type":"Point","coordinates":[109.320886192639136,-7.452052779521957]}}]}

@@ -1,0 +1,1 @@
+var json_P_Bumdes_9 = {"type":"FeatureCollection","name":"P_Bumdes_9","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Bumdes Kalistra Jaya"},"geometry":{"type":"Point","coordinates":[109.318381211777165,-7.452064629419258]}}]}

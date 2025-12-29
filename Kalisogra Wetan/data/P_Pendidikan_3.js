@@ -1,0 +1,1 @@
+var json_P_Pendidikan_3 = {"type":"FeatureCollection","name":"P_Pendidikan_3","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"SD Negeri Kalisogra Wetan"},"geometry":{"type":"Point","coordinates":[109.317659466567122,-7.451558469234549]}}]}

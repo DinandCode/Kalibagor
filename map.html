@@ -2524,19 +2524,21 @@
               addLabel(layer, i);
               i++;
         });
+           // 1. Buat Feature Group baru untuk menggabungkan layer yang ingin dicari
 var combinedSearchLayer = L.featureGroup([
-    layer_KantorBalaiDesa_17, 
+    layer_KantorBalaiDesa_17, // Layer Kantor Balai Desa
     layer_Pendidikan_16,
     layer_Tempat_Ibadah_15,
     layer_Kesehatan_14,
-    layer_NamaKecamatan_18      
+    layer_NamaKecamatan_18      // Layer Pendidikan
 ]);
 
+// 2. Tambahkan L.Control.Search menggunakan Feature Group gabungan
 map.addControl(new L.Control.Search({
-    layer: combinedSearchLayer, 
+    layer: combinedSearchLayer, // Gunakan Feature Group gabungan
     initial: false,
     hideMarkerOnCollapse: true,
-    propertyName: 'Nama' 
+    propertyName: 'Nama' // Asumsi nama tempat/lokasi pendidikan juga ada di kolom 'Nama'
 }));
         if (typeof url === 'undefined') {
             document.getElementsByClassName('search-button')[0].className += ' fa fa-binoculars';
