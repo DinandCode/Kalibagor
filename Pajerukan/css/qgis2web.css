@@ -218,6 +218,12 @@
                 1px 1px 0 #000000;
         }
         .css_JalanRT_4 {
+            text-shadow: ;
+        }
+        .css_Jalandesa_5 {
+            text-shadow: ;
+        }
+        .css_JALAN_KAB_6 {
             text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
@@ -227,109 +233,25 @@
                 1px 0px 0 #fafafa,
                 1px 1px 0 #fafafa;
         }
-        .css_Jalandesa_5 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
-        .css_JALAN_KAB_6 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
-                -1px 0px 0 #fafafa,
-                -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
-                0px -1px 0 #fafafa,
-                0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
-                1px -1px 0 #fafafa,
-                1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
-        }
         .css_TempatIbadah_7 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
+            text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
                 0px -1px 0 #fafafa,
                 0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
                 1px -1px 0 #fafafa,
                 1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
+                1px 1px 0 #fafafa;
         }
-        .css_Kesehatan_8 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
+        .css_PKesehatan_8 {
+            text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
                 0px -1px 0 #fafafa,
                 0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
                 1px -1px 0 #fafafa,
                 1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
+                1px 1px 0 #fafafa;
         }
         .css_InstansiPemerintah_9 {
             text-shadow: -2px -2px 0 #fafafa,
@@ -357,29 +279,23 @@
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
         }
-        .css_Pendidikan_10 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
+        .css_HomeSweetHome_10 {
+            text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
                 0px -1px 0 #fafafa,
                 0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
                 1px -1px 0 #fafafa,
                 1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
+                1px 1px 0 #fafafa;
+        }
+        .css_Pendidikan_11 {
+            text-shadow: -1px -1px 0 #fafafa,
+                -1px 0px 0 #fafafa,
+                -1px 1px 0 #fafafa,
+                0px -1px 0 #fafafa,
+                0px 1px 0 #fafafa,
+                1px -1px 0 #fafafa,
+                1px 0px 0 #fafafa,
+                1px 1px 0 #fafafa;
         }

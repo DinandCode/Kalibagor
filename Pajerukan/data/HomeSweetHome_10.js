@@ -1,0 +1,1 @@
+var json_HomeSweetHome_10 = {"type":"FeatureCollection","name":"HomeSweetHome_10","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Rumah Saya ( Dominic )"},"geometry":{"type":"Point","coordinates":[109.30472224797974,-7.473904116020845]}}]}

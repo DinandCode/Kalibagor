@@ -1,0 +1,1 @@
+var json_Pn_Baldes_7 = {"type":"FeatureCollection","name":"Pn_Baldes_7","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Kantor Balai Desa Kalibagor"},"geometry":{"type":"Point","coordinates":[109.300111118552735,-7.474004327302565]}}]}
