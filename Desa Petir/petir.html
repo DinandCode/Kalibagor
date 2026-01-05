@@ -38,11 +38,11 @@
         <script src="js/leaflet.photon.js"></script>
         <script src="js/leaflet-search.js"></script>
         <script src="data/Desa_Petir_1.js"></script>
-        <script src="data/Jalan_Desa_2.js"></script>
+        <script src="data/desajalan_2.js"></script>
         <script src="data/Batas_RW_3.js"></script>
         <script src="data/Jalan_Kabupaten_4.js"></script>
         <script src="data/Jalan_RW_5.js"></script>
-        <script src="data/Pendidikan_6.js"></script>
+        <script src="data/Sekolah_6.js"></script>
         <script src="data/Masjid_7.js"></script>
         <script src="data/Balai_Desa_8.js"></script>
         <script src="data/Pasar_9.js"></script>
@@ -64,7 +64,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-7.475496558960744,109.3059239864619],[-7.459318786499866,109.34141603828935]]);
+        }).fitBounds([[-7.478876205345183,109.30012776625986],[-7.457572855338436,109.34686470760118]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -256,7 +256,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 4.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -275,7 +275,7 @@
         });
         bounds_group.addLayer(layer_Desa_Petir_1);
         map.addLayer(layer_Desa_Petir_1);
-        function pop_Jalan_Desa_2(feature, layer) {
+        function pop_desajalan_2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -291,8 +291,7 @@
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Nama</th>\
-                        <td>' + (feature.properties['Nama'] !== null ? autolinker.link(String(feature.properties['Nama']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Nama'] !== null ? autolinker.link(String(feature.properties['Nama']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -302,33 +301,33 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_Jalan_Desa_2_0() {
+        function style_desajalan_2_0() {
             return {
-                pane: 'pane_Jalan_Desa_2',
+                pane: 'pane_desajalan_2',
                 opacity: 1,
-                color: 'rgba(196,196,196,1.0)',
+                color: 'rgba(171,171,174,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 1.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
         }
-        map.createPane('pane_Jalan_Desa_2');
-        map.getPane('pane_Jalan_Desa_2').style.zIndex = 402;
-        map.getPane('pane_Jalan_Desa_2').style['mix-blend-mode'] = 'normal';
-        var layer_Jalan_Desa_2 = new L.geoJson(json_Jalan_Desa_2, {
+        map.createPane('pane_desajalan_2');
+        map.getPane('pane_desajalan_2').style.zIndex = 402;
+        map.getPane('pane_desajalan_2').style['mix-blend-mode'] = 'normal';
+        var layer_desajalan_2 = new L.geoJson(json_desajalan_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Jalan_Desa_2',
-            layerName: 'layer_Jalan_Desa_2',
-            pane: 'pane_Jalan_Desa_2',
-            onEachFeature: pop_Jalan_Desa_2,
-            style: style_Jalan_Desa_2_0,
+            dataVar: 'json_desajalan_2',
+            layerName: 'layer_desajalan_2',
+            pane: 'pane_desajalan_2',
+            onEachFeature: pop_desajalan_2,
+            style: style_desajalan_2_0,
         });
-        bounds_group.addLayer(layer_Jalan_Desa_2);
-        map.addLayer(layer_Jalan_Desa_2);
+        bounds_group.addLayer(layer_desajalan_2);
+        map.addLayer(layer_desajalan_2);
         function pop_Batas_RW_3(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -366,7 +365,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 4.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -379,7 +378,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 4.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -392,7 +391,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 4.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -405,7 +404,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 4.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -418,7 +417,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 4.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -547,7 +546,7 @@
         });
         bounds_group.addLayer(layer_Jalan_RW_5);
         map.addLayer(layer_Jalan_RW_5);
-        function pop_Pendidikan_6(feature, layer) {
+        function pop_Sekolah_6(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -573,9 +572,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_Pendidikan_6_0() {
+        function style_Sekolah_6_0() {
             return {
-                pane: 'pane_Pendidikan_6',
+                pane: 'pane_Sekolah_6',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -589,26 +588,26 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Pendidikan_6');
-        map.getPane('pane_Pendidikan_6').style.zIndex = 406;
-        map.getPane('pane_Pendidikan_6').style['mix-blend-mode'] = 'normal';
-        var layer_Pendidikan_6 = new L.geoJson(json_Pendidikan_6, {
+        map.createPane('pane_Sekolah_6');
+        map.getPane('pane_Sekolah_6').style.zIndex = 406;
+        map.getPane('pane_Sekolah_6').style['mix-blend-mode'] = 'normal';
+        var layer_Sekolah_6 = new L.geoJson(json_Sekolah_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Pendidikan_6',
-            layerName: 'layer_Pendidikan_6',
-            pane: 'pane_Pendidikan_6',
-            onEachFeature: pop_Pendidikan_6,
+            dataVar: 'json_Sekolah_6',
+            layerName: 'layer_Sekolah_6',
+            pane: 'pane_Sekolah_6',
+            onEachFeature: pop_Sekolah_6,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_Pendidikan_6_0(feature));
+                return L.circleMarker(latlng, style_Sekolah_6_0(feature));
             },
         });
-        bounds_group.addLayer(layer_Pendidikan_6);
-        map.addLayer(layer_Pendidikan_6);
+        bounds_group.addLayer(layer_Sekolah_6);
+        map.addLayer(layer_Sekolah_6);
         function pop_Masjid_7(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -642,7 +641,7 @@
         rotationOrigin: 'center center',
         icon: L.icon({
             iconUrl: 'markers/Masjid_7.svg',
-            iconSize: [21.280000000000005, 21.280000000000005]
+            iconSize: [21.279999999999998, 21.279999999999998]
         }),
                 interactive: true,
             }
@@ -700,7 +699,7 @@
         rotationOrigin: 'center center',
         icon: L.icon({
             iconUrl: 'markers/Balai_Desa_8.svg',
-            iconSize: [14.440000000000001, 14.440000000000001]
+            iconSize: [14.44, 14.44]
         }),
                 interactive: true,
             }
@@ -741,7 +740,8 @@
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Nama'] !== null ? autolinker.link(String(feature.properties['Nama']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Nama</th>\
+                        <td>' + (feature.properties['Nama'] !== null ? autolinker.link(String(feature.properties['Nama']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -758,7 +758,7 @@
         rotationOrigin: 'center center',
         icon: L.icon({
             iconUrl: 'markers/Pasar_9.svg',
-            iconSize: [15.200000000000003, 15.200000000000003]
+            iconSize: [9.879999999999999, 9.879999999999999]
         }),
                 interactive: true,
             }
@@ -784,56 +784,96 @@
         bounds_group.addLayer(layer_Pasar_9);
         map.addLayer(layer_Pasar_9);
         map.on("zoomend", function(e) {
-            if (map.getZoom() <= 16 && map.getZoom() >= 14) {
-                map.addLayer(layer_Jalan_Desa_2);
-            } else if (map.getZoom() > 16 || map.getZoom() < 14) {
-                map.removeLayer(layer_Jalan_Desa_2);
+            if (map.getZoom() <= 19 && map.getZoom() >= 15) {
+                map.addLayer(layer_desajalan_2);
+            } else if (map.getZoom() > 19 || map.getZoom() < 15) {
+                map.removeLayer(layer_desajalan_2);
             }
-            if (map.getZoom() <= 16 && map.getZoom() >= 13) {
+            if (map.getZoom() <= 16 && map.getZoom() >= 14) {
                 map.addLayer(layer_Batas_RW_3);
-            } else if (map.getZoom() > 16 || map.getZoom() < 13) {
+            } else if (map.getZoom() > 16 || map.getZoom() < 14) {
                 map.removeLayer(layer_Batas_RW_3);
             }
+            if (map.getZoom() <= 19 && map.getZoom() >= 14) {
+                map.addLayer(layer_Jalan_Kabupaten_4);
+            } else if (map.getZoom() > 19 || map.getZoom() < 14) {
+                map.removeLayer(layer_Jalan_Kabupaten_4);
+            }
+            if (map.getZoom() <= 19 && map.getZoom() >= 16) {
+                map.addLayer(layer_Jalan_RW_5);
+            } else if (map.getZoom() > 19 || map.getZoom() < 16) {
+                map.removeLayer(layer_Jalan_RW_5);
+            }
             if (map.getZoom() <= 19 && map.getZoom() >= 15) {
-                map.addLayer(layer_Pendidikan_6);
+                map.addLayer(layer_Sekolah_6);
             } else if (map.getZoom() > 19 || map.getZoom() < 15) {
-                map.removeLayer(layer_Pendidikan_6);
+                map.removeLayer(layer_Sekolah_6);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 15) {
                 map.addLayer(layer_Masjid_7);
             } else if (map.getZoom() > 19 || map.getZoom() < 15) {
                 map.removeLayer(layer_Masjid_7);
+            }
+            if (map.getZoom() <= 15 && map.getZoom() >= 13) {
+                map.addLayer(layer_Balai_Desa_8);
+            } else if (map.getZoom() > 15 || map.getZoom() < 13) {
+                map.removeLayer(layer_Balai_Desa_8);
+            }
+            if (map.getZoom() <= 19 && map.getZoom() >= 14) {
+                map.addLayer(layer_Pasar_9);
+            } else if (map.getZoom() > 19 || map.getZoom() < 14) {
+                map.removeLayer(layer_Pasar_9);
             }
         });
-            if (map.getZoom() <= 16 && map.getZoom() >= 14) {
-                map.addLayer(layer_Jalan_Desa_2);
-            } else if (map.getZoom() > 16 || map.getZoom() < 14) {
-                map.removeLayer(layer_Jalan_Desa_2);
+            if (map.getZoom() <= 19 && map.getZoom() >= 15) {
+                map.addLayer(layer_desajalan_2);
+            } else if (map.getZoom() > 19 || map.getZoom() < 15) {
+                map.removeLayer(layer_desajalan_2);
             }
-            if (map.getZoom() <= 16 && map.getZoom() >= 13) {
+            if (map.getZoom() <= 16 && map.getZoom() >= 14) {
                 map.addLayer(layer_Batas_RW_3);
-            } else if (map.getZoom() > 16 || map.getZoom() < 13) {
+            } else if (map.getZoom() > 16 || map.getZoom() < 14) {
                 map.removeLayer(layer_Batas_RW_3);
             }
+            if (map.getZoom() <= 19 && map.getZoom() >= 14) {
+                map.addLayer(layer_Jalan_Kabupaten_4);
+            } else if (map.getZoom() > 19 || map.getZoom() < 14) {
+                map.removeLayer(layer_Jalan_Kabupaten_4);
+            }
+            if (map.getZoom() <= 19 && map.getZoom() >= 16) {
+                map.addLayer(layer_Jalan_RW_5);
+            } else if (map.getZoom() > 19 || map.getZoom() < 16) {
+                map.removeLayer(layer_Jalan_RW_5);
+            }
             if (map.getZoom() <= 19 && map.getZoom() >= 15) {
-                map.addLayer(layer_Pendidikan_6);
+                map.addLayer(layer_Sekolah_6);
             } else if (map.getZoom() > 19 || map.getZoom() < 15) {
-                map.removeLayer(layer_Pendidikan_6);
+                map.removeLayer(layer_Sekolah_6);
             }
             if (map.getZoom() <= 19 && map.getZoom() >= 15) {
                 map.addLayer(layer_Masjid_7);
             } else if (map.getZoom() > 19 || map.getZoom() < 15) {
                 map.removeLayer(layer_Masjid_7);
+            }
+            if (map.getZoom() <= 15 && map.getZoom() >= 13) {
+                map.addLayer(layer_Balai_Desa_8);
+            } else if (map.getZoom() > 15 || map.getZoom() < 13) {
+                map.removeLayer(layer_Balai_Desa_8);
+            }
+            if (map.getZoom() <= 19 && map.getZoom() >= 14) {
+                map.addLayer(layer_Pasar_9);
+            } else if (map.getZoom() > 19 || map.getZoom() < 14) {
+                map.removeLayer(layer_Pasar_9);
             }
         var overlaysTree = [
             {label: '<img src="legend/Pasar_9.png" /> Pasar', layer: layer_Pasar_9},
             {label: '<img src="legend/Balai_Desa_8.png" /> Balai_Desa', layer: layer_Balai_Desa_8},
             {label: '<img src="legend/Masjid_7.png" /> Masjid', layer: layer_Masjid_7},
-            {label: '<img src="legend/Pendidikan_6.png" /> Pendidikan', layer: layer_Pendidikan_6},
+            {label: '<img src="legend/Sekolah_6.png" /> Sekolah', layer: layer_Sekolah_6},
             {label: '<img src="legend/Jalan_RW_5.png" /> Jalan_RW', layer: layer_Jalan_RW_5},
             {label: '<img src="legend/Jalan_Kabupaten_4.png" /> Jalan_Kabupaten', layer: layer_Jalan_Kabupaten_4},
             {label: 'Batas_RW<br /><table><tr><td style="text-align: center;"><img src="legend/Batas_RW_3_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/Batas_RW_3_RW011.png" /></td><td>RW 01</td></tr><tr><td style="text-align: center;"><img src="legend/Batas_RW_3_RW022.png" /></td><td>RW 02</td></tr><tr><td style="text-align: center;"><img src="legend/Batas_RW_3_RW033.png" /></td><td>RW 03</td></tr><tr><td style="text-align: center;"><img src="legend/Batas_RW_3_RW044.png" /></td><td>RW 04</td></tr></table>', layer: layer_Batas_RW_3},
-            {label: '<img src="legend/Jalan_Desa_2.png" /> Jalan_Desa', layer: layer_Jalan_Desa_2},
+            {label: '<img src="legend/desajalan_2.png" /> desa jalan', layer: layer_desajalan_2},
             {label: '<img src="legend/Desa_Petir_1.png" /> Desa_Petir', layer: layer_Desa_Petir_1},
             {label: "Google Satellite", layer: layer_GoogleSatellite_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
@@ -843,67 +883,30 @@
             //openedSymbol: '&#8863; &#x1f5c1;',
             //collapseAll: 'Collapse all',
             //expandAll: 'Expand all',
-            collapsed: false, 
+            collapsed: true,
         });
         lay.addTo(map);
-		document.addEventListener("DOMContentLoaded", function() {
-            // set new Layers List height which considers toggle icon
-            function newLayersListHeight() {
-                var layerScrollbarElement = document.querySelector('.leaflet-control-layers-scrollbar');
-                if (layerScrollbarElement) {
-                    var layersListElement = document.querySelector('.leaflet-control-layers-list');
-                    var originalHeight = layersListElement.style.height 
-                        || window.getComputedStyle(layersListElement).height;
-                    var newHeight = parseFloat(originalHeight) - 50;
-                    layersListElement.style.height = newHeight + 'px';
-                }
-            }
-            var isLayersListExpanded = true;
-            var controlLayersElement = document.querySelector('.leaflet-control-layers');
-            var toggleLayerControl = document.querySelector('.leaflet-control-layers-toggle');
-            // toggle Collapsed/Expanded and apply new Layers List height
-            toggleLayerControl.addEventListener('click', function() {
-                if (isLayersListExpanded) {
-                    controlLayersElement.classList.remove('leaflet-control-layers-expanded');
-                } else {
-                    controlLayersElement.classList.add('leaflet-control-layers-expanded');
-                }
-                isLayersListExpanded = !isLayersListExpanded;
-                newLayersListHeight()
-            });	
-			// apply new Layers List height if toggle layerstree
-			if (controlLayersElement) {
-				controlLayersElement.addEventListener('click', function(event) {
-					var toggleLayerHeaderPointer = event.target.closest('.leaflet-layerstree-header-pointer span');
-					if (toggleLayerHeaderPointer) {
-						newLayersListHeight();
-					}
-				});
-			}
-            // Collapsed/Expanded at Start to apply new height
-            setTimeout(function() {
-                toggleLayerControl.click();
-            }, 10);
-            setTimeout(function() {
-                toggleLayerControl.click();
-            }, 10);
-            // Collapsed touch/small screen
-            var isSmallScreen = window.innerWidth < 650;
-            if (isSmallScreen) {
-                setTimeout(function() {
-                    controlLayersElement.classList.remove('leaflet-control-layers-expanded');
-                    isLayersListExpanded = !isLayersListExpanded;
-                }, 500);
-            }  
-        });       
         setBounds();
         var i = 0;
-        layer_Jalan_Desa_2.eachLayer(function(layer) {
+        layer_Desa_Petir_1.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 5pt; font-weight: bold; font-family: \'Nirmala UI\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Jalan_Desa_2'});
+            layer.bindTooltip((layer.feature.properties['NAMOBJ'] !== null?String('<div style="color: #323232; font-size: 7pt; font-weight: bold; font-family: \'Roboto ExtraBold\', sans-serif;">' + layer.feature.properties['NAMOBJ']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Desa_Petir_1'});
+            labels.push(layer);
+            totalMarkers += 1;
+              layer.added = true;
+              addLabel(layer, i);
+              i++;
+        });
+        var i = 0;
+        layer_desajalan_2.eachLayer(function(layer) {
+            var context = {
+                feature: layer.feature,
+                variables: {}
+            };
+            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 4pt; font-weight: bold; font-family: \'Nirmala UI\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_desajalan_2'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -924,12 +927,12 @@
               i++;
         });
         var i = 0;
-        layer_Pendidikan_6.eachLayer(function(layer) {
+        layer_Sekolah_6.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 8pt; font-weight: bold; font-family: \'Poppins\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Pendidikan_6'});
+            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 8pt; font-weight: bold; font-family: \'Poppins\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Sekolah_6'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -942,7 +945,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 7pt; font-family: \'Poppins SemiBold\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Masjid_7'});
+            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 7pt; font-weight: bold; font-family: \'Poppins SemiBold\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Masjid_7'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -955,7 +958,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'News706 BT\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Balai_Desa_8'});
+            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 7pt; font-weight: bold; font-family: \'News706 BT\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Balai_Desa_8'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -968,18 +971,20 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 8pt; font-weight: bold; font-family: \'News706 BT\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Pasar_9'});
+            layer.bindTooltip((layer.feature.properties['Nama'] !== null?String('<div style="color: #323232; font-size: 6pt; font-weight: bold; font-family: \'News706 BT\', sans-serif;">' + layer.feature.properties['Nama']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Pasar_9'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
               addLabel(layer, i);
               i++;
         });
-            var combinedSearchLayer = L.featureGroup([
-    layer_Balai_Desa_8, // Layer Kantor Balai Desa
-    layer_Pendidikan_6,
+             var combinedSearchLayer = L.featureGroup([
+    layer_Balai_Desa_8,
     layer_Masjid_7,
-    layer_Pasar_9      // Layer Pendidikan
+    layer_Pasar_9,
+    layer_Sekolah_6
+    
+          // Layer Pendidikan
 ]);
         map.addControl(new L.Control.Search({
             layer: combinedSearchLayer,
@@ -991,15 +996,15 @@
         } else {
             document.getElementsByClassName('search-button')[1].className += ' fa fa-binoculars';
         }
-        resetLabels([layer_Jalan_Desa_2,layer_Batas_RW_3,layer_Pendidikan_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
+        resetLabels([layer_Desa_Petir_1,layer_desajalan_2,layer_Batas_RW_3,layer_Sekolah_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
         map.on("zoomend", function(){
-            resetLabels([layer_Jalan_Desa_2,layer_Batas_RW_3,layer_Pendidikan_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
+            resetLabels([layer_Desa_Petir_1,layer_desajalan_2,layer_Batas_RW_3,layer_Sekolah_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_Jalan_Desa_2,layer_Batas_RW_3,layer_Pendidikan_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
+            resetLabels([layer_Desa_Petir_1,layer_desajalan_2,layer_Batas_RW_3,layer_Sekolah_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_Jalan_Desa_2,layer_Batas_RW_3,layer_Pendidikan_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
+            resetLabels([layer_Desa_Petir_1,layer_desajalan_2,layer_Batas_RW_3,layer_Sekolah_6,layer_Masjid_7,layer_Balai_Desa_8,layer_Pasar_9]);
         });
         </script>        
     </body>

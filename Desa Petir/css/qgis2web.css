@@ -194,7 +194,10 @@
             justify-content: center;
             align-items: center;
         }
-        .css_Jalan_Desa_2 {
+        .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+            display: none;
+        }
+        .css_Desa_Petir_1 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
                 -2px 0px 0 #fafafa,
@@ -219,6 +222,16 @@
                 2px 0px 0 #fafafa,
                 2px 1px 0 #fafafa,
                 2px 2px 0 #fafafa;
+        }
+        .css_desajalan_2 {
+            text-shadow: -1px -1px 0 #fafafa,
+                -1px 0px 0 #fafafa,
+                -1px 1px 0 #fafafa,
+                0px -1px 0 #fafafa,
+                0px 1px 0 #fafafa,
+                1px -1px 0 #fafafa,
+                1px 0px 0 #fafafa,
+                1px 1px 0 #fafafa;
         }
         .css_Batas_RW_3 {
             text-shadow: -2px -2px 0 #000000,
@@ -246,7 +259,7 @@
                 2px 1px 0 #000000,
                 2px 2px 0 #000000;
         }
-        .css_Pendidikan_6 {
+        .css_Sekolah_6 {
             text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
@@ -293,28 +306,12 @@
                 2px 2px 0 #fafafa;
         }
         .css_Pasar_9 {
-            text-shadow: -2px -2px 0 #fafafa,
-                -2px -1px 0 #fafafa,
-                -2px 0px 0 #fafafa,
-                -2px 1px 0 #fafafa,
-                -2px 2px 0 #fafafa,
-                -1px -2px 0 #fafafa,
-                -1px -1px 0 #fafafa,
+            text-shadow: -1px -1px 0 #fafafa,
                 -1px 0px 0 #fafafa,
                 -1px 1px 0 #fafafa,
-                -1px 2px 0 #fafafa,
-                0px -2px 0 #fafafa,
                 0px -1px 0 #fafafa,
                 0px 1px 0 #fafafa,
-                0px 2px 0 #fafafa,
-                1px -2px 0 #fafafa,
                 1px -1px 0 #fafafa,
                 1px 0px 0 #fafafa,
-                1px 1px 0 #fafafa,
-                1px 2px 0 #fafafa,
-                2px -2px 0 #fafafa,
-                2px -1px 0 #fafafa,
-                2px 0px 0 #fafafa,
-                2px 1px 0 #fafafa,
-                2px 2px 0 #fafafa;
+                1px 1px 0 #fafafa;
         }
