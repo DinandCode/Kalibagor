@@ -1,0 +1,1 @@
+var json_NamaKecamatan_16 = {"type":"FeatureCollection","name":"NamaKecamatan_16","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Kecamatan Kalibagor"},"geometry":{"type":"Point","coordinates":[109.297163241743789,-7.47415829986578]}}]}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peta Kecamatan - WebGIS Kalibagor</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { primary: '#1e3a8a', accent: '#4f7efc' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+    .main-layout { display: flex; flex-direction: column; height: 100vh; }
+    .map-frame { flex: 1; position: relative; width: 100%; background: #f8fafc; }
+    iframe { width: 100%; height: 100%; border: none; }
+    
+    /* Animasi sederhana untuk modal */
+    .animate-zoom { animation: zoom 0.3s ease-out; }
+    @keyframes zoom { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  </style>
+</head>
+<body class="bg-primary">
+
+<div class="main-layout">
+  <header class="bg-primary text-white shadow-xl border-b border-white/10 z-50"
+  x-data="{ open:false, desaOpen:false }">
+
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+
+    <!-- LOGO & TITLE -->
+    <div class="flex items-center gap-3">
+      <img src="../images/kab.banyumas.png"
+        class="h-9 w-9 md:h-10 md:w-10 bg-white rounded-full p-1 shadow" />
+
+      <div class="flex flex-col border-l border-white/20 pl-3">
+        <div class="flex items-center gap-1.5 text-[9px] uppercase tracking-widest opacity-70 font-semibold">
+          <span class="text-yellow-400">Peta Kecamatan</span>
+          <i class="fas fa-chevron-right text-[8px]"></i>
+          <span>Kalibagor</span>
+        </div>
+        <h1 class="text-[13px] md:text-sm font-bold leading-tight">
+          Detail Wilayah Kecamatan
+        </h1>
+      </div>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <nav class="hidden md:flex items-center gap-2 text-[13px] font-semibold">
+
+      <!-- Dropdown Desa -->
+      <div class="relative group">
+        <button
+          class="flex items-center gap-2 px-3 py-2 rounded-lg
+                 bg-white/5 hover:bg-white/10 border border-white/10 transition">
+          <i class="fas fa-layer-group text-yellow-400 text-xs"></i>
+          <span>Peta Desa</span>
+          <i class="fas fa-chevron-down text-[9px] opacity-60"></i>
+        </button>
+
+        <div
+          class="absolute right-0 mt-2 w-48 bg-white text-blue-900 rounded-xl shadow-xl
+                 opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                 transition-all duration-200 overflow-hidden">
+          <a href="../Kalicupak Lor/index.html" class="block px-4 py-2.5 hover:bg-blue-600 hover:text-white">Kalicupak Lor</a>
+          <a href="../Kalisogra Wetan/index.html" class="block px-4 py-2.5 hover:bg-blue-600 hover:text-white">Kalisogra Wetan</a>
+          <a href="../Desa Petir/index.html" class="block px-4 py-2.5 hover:bg-blue-600 hover:text-white">Desa Petir</a>
+          <a href="../Pajerukan/index.html" class="block px-4 py-2.5 hover:bg-blue-600 hover:text-white">Desa Pajerukan</a>
+                    <a href="../Desa Kalibagor/index.html" class="block px-4 py-2.5 hover:bg-blue-600 hover:text-white">Kalibagor</a>
+
+        </div>
+      </div>
+
+      <a href="../peta.html"
+        class="flex items-center gap-2 px-3 py-2 rounded-lg
+               bg-white/5 hover:bg-blue-600/90 border border-white/10 transition">
+        <i class="fas fa-map-marked-alt text-yellow-400 text-xs"></i>
+        Kecamatan
+      </a>
+
+      <button onclick="openPreview()"
+        class="flex items-center gap-2 px-3 py-2 rounded-lg
+               bg-yellow-500/90 hover:bg-yellow-500 text-[12px] font-bold transition">
+        <i class="fas fa-download text-xs"></i>
+        Download
+      </button>
+
+     <!-- Divider -->
+<div class="h-5 w-px bg-white/20 mx-1"></div>
+
+<a href="../index.html"
+  class="flex items-center gap-2 px-3 py-2 rounded-lg
+         hover:bg-white/10 border border-white/10 transition">
+
+        <i class="fas fa-home text-xs"></i>
+        Beranda
+      </a>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <button @click="open = !open"
+      class="md:hidden text-white text-lg px-2 py-1 rounded-lg hover:bg-white/10 transition">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div x-show="open" x-transition @click.outside="open=false"
+    class="md:hidden bg-primary border-t border-white/10 px-4 py-3 space-y-2 text-[13px]">
+
+    <a href="../peta.html"
+      class="flex items-center gap-3 px-4 py-2.5 rounded-lg
+             bg-white/5 hover:bg-white/10 border border-white/10 transition">
+      <i class="fas fa-map-marked-alt text-yellow-400 text-xs"></i>
+      Peta Kecamatan
+    </a>
+
+    <button onclick="openPreview()"
+      class="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg
+             bg-yellow-500/90 hover:bg-yellow-500 font-semibold transition">
+      <i class="fas fa-download text-xs"></i>
+      Download Peta
+    </button>
+
+    <!-- Mobile Dropdown -->
+    <button @click="desaOpen=!desaOpen"
+      class="w-full flex items-center justify-between px-4 py-2.5 rounded-lg
+             bg-white/5 hover:bg-white/10 border border-white/10 transition">
+      <div class="flex items-center gap-3">
+        <i class="fas fa-layer-group text-yellow-400 text-xs"></i>
+        Peta Desa Lain
+      </div>
+      <i class="fas fa-chevron-down text-[10px] transition"
+         :class="{ 'rotate-180': desaOpen }"></i>
+    </button>
+
+    <div x-show="desaOpen" x-transition class="ml-3 border-l border-white/20 pl-3 space-y-1">
+      <a href="../Kalicupak Lor/index.html" class="block px-3 py-2 rounded-md hover:bg-blue-600/80 transition">Kalicupak Lor</a>
+      <a href="../Kalisogra Wetan/index.html" class="block px-3 py-2 rounded-md hover:bg-blue-600/80 transition">Kalisogra Wetan</a>
+      <a href="../Desa Petir/index.html" class="block px-3 py-2 rounded-md hover:bg-blue-600/80 transition">Desa Petir</a>
+      <a href="../Pajerukan/index.html" class="block px-3 py-2 rounded-md hover:bg-blue-600/80 transition">Desa Pajerukan</a>
+      <a href="../Desa Kalibagor/index.html" class="block px-3 py-2 rounded-md hover:bg-blue-600/80 transition">Kalibagor</a>
+    </div>
+    <a href="../index.html"
+      class="flex items-center gap-3 px-4 py-2.5 rounded-lg
+             bg-white/5 hover:bg-white/10 border border-white/10 transition">
+      <i class="fas fa-home text-xs"></i>
+      Beranda
+    </a>
+  </div>
+</header>
+
+  <main class="map-frame">
+    <iframe src="map.html" title="Peta Kecamatan Kalibagor"></iframe>
+  </main>
+
+</div>
+
+<div id="previewModal" class="fixed inset-0 bg-black/80 backdrop-blur-md hidden z-[100] items-center justify-center px-4 transition-all">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden animate-zoom">
+    <div class="flex justify-between items-center px-6 py-4 border-b border-gray-100">
+      <div class="flex items-center gap-3">
+        <div class="bg-blue-100 p-2 rounded-lg text-blue-600">
+            <i class="fas fa-map"></i>
+        </div>
+        <h3 class="font-bold text-blue-900">Preview & Download Peta</h3>
+      </div>
+      <button onclick="closePreview()" class="text-gray-400 hover:text-red-500 transition p-2">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+    </div>
+    
+    <div class="p-6 bg-gray-50 flex justify-center overflow-auto max-h-[65vh]">
+      <img src="images/Kec Kalibagor.png" alt="Preview Peta" class="rounded-xl shadow-xl border border-gray-200">
+    </div>
+    
+    <div class="flex flex-col sm:flex-row justify-end gap-3 px-6 py-4 border-t bg-white">
+      <p class="text-[11px] text-gray-500 mr-auto self-center italic">Format: PNG High Resolution</p>
+      <button onclick="closePreview()" class="order-2 sm:order-1 bg-gray-100 text-gray-600 px-6 py-2.5 rounded-xl hover:bg-gray-200 transition font-bold text-sm">
+        Tutup
+      </button>
+      <a href="images/Kec Kalibagor.png" download class="order-1 sm:order-2 bg-blue-800 text-white px-8 py-2.5 rounded-xl hover:bg-blue-900 transition flex items-center justify-center gap-2 font-bold text-sm shadow-lg shadow-blue-800/20">
+        <i class="fas fa-file-download"></i> Simpan Peta (PNG)
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openPreview() {
+    const modal = document.getElementById('previewModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden'; // Kunci scroll
+  }
+
+  function closePreview() {
+    const modal = document.getElementById('previewModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = 'auto'; // Lepas scroll
+  }
+
+  // Tutup modal jika user klik area luar modal
+  window.onclick = function(event) {
+    const modal = document.getElementById('previewModal');
+    if (event.target == modal) {
+      closePreview();
+    }
+  }
+</script>
+
+</body>
+</html>
