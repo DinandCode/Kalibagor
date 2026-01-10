@@ -2385,8 +2385,13 @@
               addLabel(layer, i);
               i++;
         });
+          var combinedSearchLayer = L.featureGroup([
+    layer_NamaKecamatan_16,
+    
+          
+]);
         map.addControl(new L.Control.Search({
-            layer: layer_NamaKecamatan_16,
+            layer: combinedSearchLayer,
             initial: false,
             hideMarkerOnCollapse: true,
             propertyName: 'Nama'}));
